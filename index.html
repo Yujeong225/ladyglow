@@ -1,6 +1,254 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>마취크림 판매 | 편안한 시술을 위한 필수템</title>
+  <style>
+    /* 기본 리셋 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    header, section, footer {
+      padding: 20px;
+    }
+    
+    /* 헤더 영역 스타일 */
+    header {
+      /* 배경 이미지는 예시이며, 실제로 사용하실 이미지를 배치하세요 */
+      background: url('https://via.placeholder.com/1200x600/ffcc99/333?text=MAECHI+Cream+Banner') no-repeat center center / cover;
+      color: #fff;
+      text-align: center;
+      position: relative;
+      min-height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 2.2em;
+      margin-bottom: 0.5em;
+    }
+    header .highlight {
+      color: #ff6600; /* 강조 색상 */
+    }
+    header p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.4;
+    }
+    header .cta-btn {
+      background-color: #ff6600;
+      color: #fff;
+      padding: 12px 24px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    header .cta-btn:hover {
+      background-color: #ff4400;
+    }
+
+    /* 메인 컨테이너 */
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+    
+    section h2 {
+      font-size: 1.8em;
+      margin-bottom: 16px;
+    }
+    
+    /* 제품 특징 섹션 */
+    .product-features ul {
+      list-style: disc;
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+    
+    /* 구매 버튼 섹션 */
+    .purchase-section {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .purchase-section button {
+      background-color: #ff6600;
+      color: #fff;
+      padding: 15px 30px;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .purchase-section button:hover {
+      background-color: #ff4400;
+    }
+    
+    /* FAQ */
+    .faq dl dt {
+      font-weight: bold;
+      margin-top: 16px;
+    }
+    .faq dl dd {
+      margin-left: 10px;
+      margin-top: 4px;
+    }
+    
+    /* 리뷰 */
+    .reviews .review-item {
+      background: #f9f9f9;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+    }
+    .reviews .review-item strong {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    /* 푸터 */
+    footer {
+      background-color: #f2f2f2;
+      text-align: center;
+    }
+    footer .footer-menu {
+      margin-bottom: 10px;
+    }
+    footer .footer-menu a {
+      color: #333;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer p {
+      font-size: 0.9em;
+      color: #666;
+      margin-top: 6px;
+    }
+    
+    /* 반응형 디자인 */
+    @media(max-width: 768px) {
+      header {
+        min-height: 30vh;
+      }
+      header h1 {
+        font-size: 1.8em;
+      }
+      header p {
+        font-size: 1.1em;
+        max-width: 80%;
+      }
+      header .cta-btn {
+        font-size: 1em;
+        padding: 10px 20px;
+      }
+      section h2 {
+        font-size: 1.5em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- 헤더 영역 -->
+  <header>
+    <h1>편안한 시술을 위한 <span class="highlight">마취크림</span></h1>
+    <p>간편하고 빠른 마취 효과, 안전성까지 갖춘 믿을 수 있는 제품</p>
+    <!-- 첫 화면에서 바로 구매로 연결할 수 있는 CTA -->
+    <button class="cta-btn" onclick="location.href='#purchase'">
+      지금 바로 구매하기
+    </button>
+  </header>
+  
+  <!-- 메인 내용 -->
+  <main>
+    <!-- 제품 특장점 -->
+    <section class="product-features">
+      <h2>제품 특징 & 사용법</h2>
+      <p>마취크림은 문신, 제모, 왁싱, 미용 시술 등 통증이 예상되는 상황에서 피부에 직접 바르는 크림 형태의 마취제입니다.</p>
+      <ul>
+        <li>사용 부위 : 팔, 다리, 얼굴 등 대부분 부위에 사용 가능</li>
+        <li>안전성 : 피부 저자극 성분, 뛰어난 보습 효과</li>
+        <li>효과 : 빠른 마취 시간, 장시간 지속력</li>
+        <li>사용법 : 적당량을 바르고 20~30분 후 닦아내거나 시술 진행</li>
+      </ul>
+    </section>
+
+    <!-- 중간 CTA -->
+    <section class="purchase-section">
+      <button onclick="location.href='#purchase'">지금 바로 구매하기</button>
+    </section>
+
+    <!-- FAQ 섹션 -->
+    <section class="faq">
+      <h2>자주 묻는 질문 (FAQ)</h2>
+      <dl>
+        <dt>얼마나 바르면 되나요?</dt>
+        <dd>시술 부위가 충분히 덮일 정도의 크림 양을 바르는 것이 좋습니다.</dd>
+
+        <dt>바른 후 어느 정도 기다려야 하나요?</dt>
+        <dd>개인차가 있으나 보통 20~30분 후에 마취 효과가 나타납니다.</dd>
+
+        <dt>부작용이나 주의 사항이 있나요?</dt>
+        <dd>피부 트러블이 있거나 상처가 있는 부위에는 사용을 자제해주세요.  
+            이상 반응 시 즉시 사용을 중단하고 전문의와 상담하세요.</dd>
+
+        <dt>배송과 환불 정책은 어떻게 되나요?</dt>
+        <dd>평일 오후 3시 이전 주문 시 당일 발송되며, 제품에 하자가 있을 경우 교환/환불이 가능합니다.</dd>
+      </dl>
+    </section>
+
+    <!-- 실제 후기 섹션 -->
+    <section class="reviews">
+      <h2>실제 후기</h2>
+      <div class="review-item">
+        <strong>김민수 님</strong>
+        <p>“문신할 때 통증이 너무 두려웠는데, 이 크림 바르고 마음 편히 받았습니다. 확실히 통증이 덜하네요!”</p>
+      </div>
+      <div class="review-item">
+        <strong>이하나 님</strong>
+        <p>“제모 왁싱할 때 정말 도움 많이 됐어요. 바르고 기다리는 시간도 짧고, 화끈거리는 느낌도 덜해서 좋았습니다.”</p>
+      </div>
+    </section>
+
+    <!-- 구매 섹션 -->
+    <section id="purchase" class="purchase-section">
+      <h2>마취크림 구매하기</h2>
+      <p>원하시는 수량과 결제 방식을 선택해 주세요.</p>
+      <!-- 실제 결제 연결은 PG사(네이버페이, 카카오페이 등) 연동 필요 -->
+      <button>구매하기</button>
+    </section>
+  </main>
+
+  <!-- 푸터 -->
+  <footer>
+    <div class="footer-menu">
+      <a href="#">회사 소개</a> | 
+      <a href="#">개인정보 처리방침</a> | 
+      <a href="#">이용 약관</a>
+    </div>
+    <p>상호명: (주)마취크림코리아 | 대표자: 홍길동 | 사업자등록번호: 123-45-67890</p>
+    <p>통신판매업신고: 제2025-서울강남-0001호 | 주소: 서울특별시 강남구 테헤란로 123</p>
+    <p>고객센터: 02-1234-5678 | 이메일: info@creamkorea.com</p>
+    <p>Copyright © 2025 (주)마취크림코리아. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>레이디 글러우 - 울트라타투 마취크림</title>
